@@ -1,9 +1,9 @@
 {
-  "name": "draft-wysiwyg",
+  "name": "peterKaleta/draft-wysiwyg",
   "version": "0.2.4",
   "author": "Benjamin Kniffler",
   "license": "MIT",
-  "repository": "https://github.com/bkniffler/draft-wysiwyg",
+  "repository": "https://github.com/peterKaleta/draft-wysiwyg",
   "main": "./lib",
   "engines": {
     "node": "5.x.x",
