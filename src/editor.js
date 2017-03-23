@@ -102,7 +102,7 @@ class WysiwygEditor extends Component {
 
   render() {
     const { editorState } = this.state;
-    const { isDragging, progress, readOnly } = this.props;
+    const { isDragging, progress, readOnly, value, blockTypes, onChange, ...rest } = this.props;
 
     return (
 	    <Editor readOnly={readOnly} editorState={editorState}
@@ -111,6 +111,7 @@ class WysiwygEditor extends Component {
         blockRendererFn={this.blockRendererFn}
 	      onChange={this.onChange}
 	      ref="editor"
+        { ...rest }
 	    />
     );
   }

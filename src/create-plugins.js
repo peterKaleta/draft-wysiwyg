@@ -83,24 +83,6 @@ export default ({ handleUpload, handleDefaultData, plugins = ()=>{}, toolbar = {
         editorState,
         'header-3'
       )),
-    }, {
-      button: <span>H4</span>,
-      key: 'H4',
-      label: 'Header 4',
-      active: (block, editorState) => block.get('type') === 'header-4',
-      toggle: (block, action, editorState, setEditorState) => setEditorState(RichUtils.toggleBlockType(
-        editorState,
-        'header-4'
-      )),
-    }, {
-      button: <span>H5</span>,
-      key: 'H5',
-      label: 'Header 5',
-      active: (block, editorState) => block.get('type') === 'header-4',
-      toggle: (block, action, editorState, setEditorState) => setEditorState(RichUtils.toggleBlockType(
-        editorState,
-        'header-5'
-      )),
     }].filter(toolbarItem => !toolbar.disableItems.includes(toolbarItem.key)), ...toolbar.textActions]
   }),
   createFocusPlugin({}),
